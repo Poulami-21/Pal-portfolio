@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poulami Pal | Creative Portfolio</title>
+  <link rel="stylesheet" href="aboutme.css" />
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="aboutme.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Poulami Pal</h1>
+      <span>Creative Artist | Designer</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="special projects.html">Special Project</a></li>
+        <li><a href="#">My works</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Intro Section -->
+  <section class="intro">
+    <div class="intro-left">
+      <img src="black and white photo-min.jpg" alt="Poulami Pal" />
+    </div>
+    <div class="intro-right">
+      <h2>Hi I’m</h2>
+      <h1>Poulami</h1>
+      <p>
+      I’m a designer, storyteller, and visual artist with expertise in 3D visualization, motion graphics, UI/UX design, and digital illustration. Having studied communication design at NIFT, I’ve honed my ability to craft visuals that engage, inform, and inspire.<br> Whether it’s dynamic animations, intuitive interfaces, or striking illustrations, I blend creativity with strategy to bring ideas to life. My focus is on creating designs that not only look great but feel seamless and memorable. </p>
+      <div class="buttons">
+        <button onclick="downloadCV()">Download CV</button>
+        <button onclick="contact()">Contact</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="about-area" id="about">
+        <div class="container">
+            <div class="about">
+                
+                <div class="about-content">
+                    <h4>About Me</h4>
+                    <ul>
+                      <li><strong>Competitive Designer</strong> – I actively participate in design competitions like Y3K and Chandigarh Marathon’s logo design, constantly refining my skills.</li>
+                      <li> <strong> Recognized Talent</strong> – In 2018, I was nominated AIR-13 in the Senior Artist category by Petroleum Conservation Research Association of India.</li>
+                      <li> <strong> Multilingual Communicator</strong> – Fluent in Hindi, English, and Bengali, I collaborate effectively across diverse teams.</li>
+						<li> <strong> Professional &amp; Efficient</strong> – With a NIFT background, I excel in structured workflows, tight deadlines, and delivering high-quality results.</li>
+						<li> <strong> Open to Opportunities</strong> – Seeking design roles, projects, and collaborations—let’s connect!</li>
+                    </ul>
+                </div>
+                
+                                  
+                <div class="about-skills">
+                    <ul>
+                        <li>Name : Poulami Pal</li>     
+                        <li>From : India</li>
+                        <li>Email : payypal21@gmail.com</li>
+                        <li>Availabiltiy : Fulltime</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Skills -->
+    <div class="about-softskills">
+      <h3>Software Skills</h3>
+      <div class="skills-icons">
+        <div><img src="photoshop.png" alt="Adobe Photoshop"><span>Phtoshop</span></div>
+        <div><img src="illustrator.png" alt="Adobe Illustrator"><span>Illustrator</span></div>
+        <div><img src="adobe-indesign-logo.png" alt="Adobe Indesign"><span>Indesign</span></div>
+        <div><img src="after-effects.png" alt="Adobe Aftereffects"><span>Aftereffects</span></div>
+        <div><img src="figma.png" alt="Figma for UI/UX"><span>Figma</span></div>
+        <div><img src="blender-icon.svg" alt="Blender 3D"><span>Blender</span></div>
+        <div><img src="zbrush-seeklogo.png" alt="Zbrush for Sculpting"><span>Zbrush</span></div>
+        <div><img src="procreate logo.jpeg" alt="Procreate for digital Illustration"><span>Procreate</span></div>
+      </div>
+    </div>
+
+<div id="contact-section"></div>
+
+<!-- Load contact form dynamically -->
+<script>
+  fetch("contact.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("contact-section").innerHTML = html;
+    });
+</script>
+<link rel="stylesheet" href="contact.css" />
+<script src="contact.js"></script>
+
+
+  <script src="aboutme.js"></script>
+</body>
+</html>

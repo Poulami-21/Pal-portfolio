@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'allenoire';
+    src: url('allenoire-allenoire-regular-400.ttf')	
+}
+@font-face {
+    font-family: 'inter';
+    src: url('Inter_18pt-Regular.ttf')	
+}
+body {
+  margin: 0;
+  font-family: 'inter';
+  background: #fff;
+  color: #000;
+}
+
+header {
+  background-image: url('"white-png-base_23-2151645368.png"'); /* or the full correct path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px 20px;
+  position: relative;
+  min-height: 585px;
+  font-family: 'allenoire', sans-serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'allenoire', sans-serif; /* Apply Allenoire font to headers */
+}
+
+.intro-text {
+  position: absolute;
+  top: 30px; /* raised higher (was 50px or more before) */
+  left: 20px;
+}
+.intro-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.intro-text p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.hero-caption {
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 600px;
+}
+
+.hero-caption button {
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-caption button:hover {
+  background-color: #FFFAA0;
+  color: black;
+}
+
+
+.projects {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: inter;
+}
+
+.projects h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  width: 250px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.experience-education {
+  display: flex;
+  justify-content: space-around;
+  background: #FFFAA0;
+  padding: 30px 10px;
+}
+
+.logos img {
+  margin: 0 10px;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+footer .social img {
+  margin: 0 8px;
+}
+
+.rights {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  height: 100%;
+  transition: right 0.3s ease-in-out;
+  padding-top: 60px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Increase font size */
+  transition: background-color 0.3s ease;
+}
+/* Experience Section Logos */
+.experience .logos img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 5px;
+  transition: filter 0.3s ease;
+}
+
+.experience .logos img:hover {
+  filter: brightness(1.4) sepia(0.3) saturate(200%) hue-rotate(20deg);
+  background-color: #FFFAA0;
+}
+
+/* Education image (Bangur Cement) */
+.education img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  transition: background-color 0.3s ease;
+}
+
+.education img:hover {
+  background-color: #FFFAA0;
+}
+
+/* Contact Me Social Icons */
+footer .social img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin: 0 10px;
+  transition: filter 0.3s ease, background-color 0.3s ease;
+}
+
+footer .social img:hover {
+  filter: brightness(1.4);
+  background-color: #FFFAA0;
+  border-radius: 4px;
+}
+
+/* Sidebar menu item hover effect */
+.sidebar ul li a:hover {
+  background-color: #FFFAA0;
+  color: black;
+  padding-left: 5px;
+  transition: 0.3s;
+}
+.card {
+  width: 250px;
+  text-align: left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card:hover {
+  background-color: #FFFAA0;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+.project-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
+
+.arrow-btn {
+  font-size: 24px;
+  padding: 8px 12px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #FFFAA0;
+}
+#hero {
+  background-image: url('white-png-base_23-2151645368.png');
+  background-size: contain;
+  background-position: center;
+  background-color: #000;
+  color: white;
+  padding: 50px 20px;
+  position: relative;
+  min-height: 585px;
+  margin-top: 60px;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.hero-caption {
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 600px;
+}
+
+.hero-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 10px;
+}
+
+.hero-main {
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hero-arrow {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border: 2px solid white;
+  border-radius: 6px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-arrow:hover {
+  background-color: #FFFAA0;
+  color: black;
+}
+.hero-image-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-image-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  position: absolute;
+}
+/* Navigation Header Styles */
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8e71c;
+}
+
+.site-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-right a:hover {
+  color: #fffaa0;
+}

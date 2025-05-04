@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Projects - Poulami Pal</title>
+  <link rel="stylesheet" href="special-projects.css" />
+  <script src="special-projects.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">Poulami Pal</div>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="#">My works</a>
+      <a href="about-me.html">About me</a>
+    </nav>
+  </header>
+
+  <h1 class="main-title">Special Projects</h1>
+
+  <section class="art-grid">
+    <div class="art-item">
+      <img src="Caratlane storee design.png" alt="caratlane store realistic 3D model"/>
+      <div class="art-details">
+        <div class="art-title">Catalane Store Design</div>
+        <p class="project-description">This project involved redesigning a Caratlane jewelry store using Blender 3D as part of a retail design assignment. I visited a real store in Budgam, Srinagar, India. to take dimensions, analyze planning issues, and then created a new layout focused on better customer flow and display efficiency. <br>
+          <br>
+        </p>
+        <p class="project-description">Using 3D modeling, texturing, lighting, and animation, I recreated the store with a clean, modern look.</p>
+        <button class="project-button">See Full Project</button>
+      </div>
+    </div>
+    <div class="art-item">
+      <img src="Chandigarh marathon.jpg" alt="Chandigar Marathon logo design" />
+      <div class="art-details">
+        <div class="art-title">Chandigarh Marathon logo Design</div>
+        <p class="project-description">I created the official logo design for Chandigarh Marathon, inspired by the city’s iconic modernist architecture and its identity as a green, sustainable city. The geometric form and green-gray palette reflect both the urban structure and the eco-conscious spirit of the event.&nbsp;</p>
+        <p class="project-description">The branding was developed to be bold, versatile, and memorable across apparel and promotional materials.</p>
+        <button class="project-button">See Full Project</button>
+      </div>
+    </div>
+    <div class="art-item">
+      <img src="Boss Bitch Magazine op1.png" alt="Boss Bitch styling and photography magazine" />
+      <div class="art-details">
+        <div class="art-title">Boss Bitch - magazine</div>
+        <p class="project-description">Created as part of a college assignment, Boss Bitch Magazine is a bold editorial piece inspired by women empowerment. I led the creative direction, from studio photography and fashion styling to layout design and magazine production, showcasing strong, confident, modern independent women.</p>
+        <button class="project-button">See Full Project</button>
+      </div>
+    </div>
+    <div class="art-item">
+      <img src="Crs website design.png" alt="Convouyer Ropeways Services pvt. ltd" />
+      <div class="art-details">
+        <div class="art-title">'CRS' Website Design</div>
+        <p class="project-description">As part of my internship at Bulb Studio, I led the UI/UX redesign of Convouyer Ropeways Services Pvt. Ltd.’s official website. I was responsible for user research, wireframing, high-fidelity UI design, and structuring the overall user experience to enhance clarity and engagement.</p>
+        <button class="project-button">See Full Project</button>
+      </div>
+    </div>
+    <div class="art-item">
+      <img src="mrittika branding.png" alt="mrittika branding" />
+      <div class="art-details">
+        <div class="art-title">Mrittika Branding</div>
+        <p class="project-description">I designed a complete Visual identity for Mrittika, a hypothetical architectural consultancy, as a part of our assignment at NIFT. This included logo design, color palette, packaging elements, social media branding, virtual Store design for a complete brand identity.</p>
+        <p class="project-description">&nbsp;The design reflects the nature and authenticity of the Architecture studio while offering a fresh, cultural appeal.</p>
+        <button class="project-button">See Full Project</button>
+      </div>
+    </div>
+    <div class="art-item">
+      <img src="Nolan magazine.png" alt="Nolan Magazine" />
+      <div class="art-details">
+        <div class="art-title">NOLAN - Magazine</div>
+        <p class="project-description">Created as part of an assignment at NIFT, this magazine explores Christopher Nolan’s iconic films through a blend of editorial layout, graphics, and illustration. I researched his work and designed every element—from visual storytelling to typographic hierarchy—to reflect his cinematography style.</p>
+        <button class="project-button">See Full Project</button>
+      </div>
+    </div>
+    <div class="art-item">
+      <img src="Super roti branding.jpg" alt="super roti branding" />
+      <div class="art-details">
+        <div class="art-title">Super Roti Branding</div>
+        <p class="project-description">I designed a complete brand identity for Super Roti, a local Kashmiri bakery, to enhance its visual presence and customer recognition. This included logo design, color palette, packaging elements, and social media branding for a consistent and engaging experience across platforms.
+The design reflects the warmth and authenticity of the bakery while offering a fresh, energized appeal.</p>
+        <button class="project-button">See Full Project</button>
+      </div>
+    </div>
+    <!-- more items can be added similarly -->
+  </section>
+  <div id="contact-section"></div>
+  <script>
+  fetch("contact.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("contact-section").innerHTML = html;
+    });
+</script>
+<link rel="stylesheet" href="contact.css" />
+<script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import url('stylesheet.css');
+@font-face {
+    font-family: 'allenoire';
+    src: url('allenoire-allenoire-regular-400.ttf')	
+}
+@font-face {
+    font-family: 'inter';
+    src: url('Inter_24pt-Regular.ttf')	
+}
+/* Base Reset */
+body {
+  margin: 0;
+  font-family: "inter", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header Nav */
+.site-header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'allenoire', sans-serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'allenoire', sans-serif; /* Apply Allenoire font to headers */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #f8e71c;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #FFFAA0;
+}
+
+
+.main-title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.2rem;
+}
+
+/* Art Grid */
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.art-item {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.art-item:hover {
+  transform: scale(1.01);
+}
+
+.art-item img {
+  width: 100%;
+  height: auto;
+}
+
+.art-details {
+  margin-top: 10px;
+}
+
+.art-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: "allenoire";
+}
+
+.project-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.project-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #FFFAA0;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .art-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poulami Pal home page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation Header -->
+<div class="top-navbar">
+  <div class="nav-left">
+    <h1 class="site-title">Poulami Pal</h1>
+    <p class="site-subtitle">Creative Artist | Designer</p>
+  </div>
+  <nav class="nav-right">
+    <a href="special projects.html">Special Project</a>
+    <a href="works.html">My Works</a>
+    <a href="about-me.html">About Me</a>
+  </nav>
+</div>
+  <header id="hero">
+  <div class="hero-image-slider">
+    <img src="Span Hero Image1-min.jpg" alt="hand drawn art of roman sculpture" id="hero-img" />
+  </div>
+
+  <div class="hero-caption">
+    <p>
+   <span style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif"> Welcome to my portfolio. I am an India based  designer with  dexterity in multiple media like 3D, motion graphics, UI/UX,&nbsp; and graphics.&nbsp;</span> &nbsp;&nbsp; </p>
+    <div class="hero-controls">
+      <button class="hero-arrow" id="prev-hero">&#60;</button>
+      <button class="hero-arrow" id="next-hero">&#62;</button>
+    </div>
+  </div>
+</header>
+  <section class="projects">
+    <h2>Special Projects</h2>
+    <p>
+ Delve in to my most appreciated projects that includes, Visual identity creation, graphics, 3D interiors and more. These projects were created as a part of my assignments, or  for various competitions.
+    </p>
+  <div class="project-carousel">
+    <div class="cards">
+      <div class="card">
+        <img src="Caratlane storee design.png" alt="Catalane Store Design" />
+        <h3>Catalane Store Design</h3>
+        <p>3D Store designed for Caratlane store Budgam, Srinagar, J&K.</p>
+      </div>
+      <div class="card">
+        <img src="Chandigarh marathon.jpg" alt="Chandigarh Marathon Logo" />
+        <h3>Chandigarh Marathon Logo</h3>
+        <p>Logo Design from scratch for Chandigarh Marathon, Chandigarh UT.</p>
+      </div>
+      <div class="card">
+        <img src="Super roti branding.jpg" alt="Super Roti" />
+        <h3>Super Roti - Branding</h3>
+        <p>Complete Brand Identity Design for Super Roti; A bakery store in Srinagar, India.</p>
+      </div>
+    </div>
+</div>
+  </section>
+
+  <section class="experience-education">
+    <div class="experience">
+      <h3>Experience</h3>
+      <div class="logos">
+        <img src="experience Shilpshala logo-min.png" alt="Shilpshala" />
+        <img src="Experience Bulbstudio logo.png" alt="Bulbstudio" />
+      </div>
+    </div>
+    <div class="education">
+      <h3>Education</h3>
+      <img src="Education jnv logo-min.png" alt="Jawahar Navodaya Vidyalaya" />
+      <img src="Education NIFT HD LOGO PNF-min.png" alt="National Institute of Fashion Technology" />
+    </div>
+  </section>
+
+  <!-- Contact Form Placeholder -->
+<div id="contact-section"></div>
+
+<!-- Load contact form dynamically -->
+<script>
+  fetch("contact.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("contact-section").innerHTML = html;
+    });
+</script>
+<link rel="stylesheet" href="contact.css" />
+<script src="contact.js"></script>
+
+</body>
+</html>
